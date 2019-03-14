@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    defaultConfig {
+        applicationId "com.judemanutd.katexviewexample"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.compileSdk
+        versionCode versions.publishVersionCode
+        versionName versions.publishVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':katexview')
+
+    /* Test tools */
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.2-alpha02'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha02'
+
+    // implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:' + versions.kotlin
+
+    implementation 'androidx.appcompat:appcompat:' + versions.androidxCore
+    // implementation 'androidx.appcompat:appcompat:1.1.0-alpha02'
+    // implementation 'androidx.core:core-ktx:1.1.0-alpha05'
+    implementation 'androidx.core:core-ktx:' + versions.androidxKotlinCore
+
+}
