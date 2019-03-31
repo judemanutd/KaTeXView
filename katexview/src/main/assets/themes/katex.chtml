@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Katex View</title>
+      <link rel="stylesheet" type="text/css" href="file:///android_asset/katex/katex.min.css">
+      <style type="text/css">
+         body {
+             margin : 0;
+             padding : 0;
+             color : {$textColor}
+             -webkit-touch-callout: none!important;
+             -webkit-user-select: none!important;
+             user-select: none!important;
+         }
+      </style>
+   </head>
+   <body>
+      {$formula}
+      <script type="text/javascript" src="file:///android_asset/katex/katex.min.js"></script>
+      <script type="text/javascript" src="file:///android_asset/katex/contrib/auto-render.min.js"></script>
+      <script>
+          document.addEventListener("DOMContentLoaded", function() {
+                  renderMathInElement(document.body, {
+                     delimiters : [
+                        {left: "$$", right: "$$", display: false},
+                     ]
+                  });
+              });
+      </script>
+   </body>
+</html>
