@@ -13,7 +13,7 @@ import androidx.core.content.ContextCompat
 
 @SuppressLint("SetJavaScriptEnabled")
 class KatexView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) :
-    WebView(context, attrs, defStyleAttr) {
+        WebView(context, attrs, defStyleAttr) {
 
     private val TAG_FORMULA: String = "formula"
     private val TAG_TEXT_COLOR: String = "textColor"
@@ -37,10 +37,10 @@ class KatexView @JvmOverloads constructor(context: Context, attrs: AttributeSet?
 
         try {
             setTextColor(
-                mTypeArray.getColor(
-                    R.styleable.KatexView_textColor,
-                    ContextCompat.getColor(getContext(), android.R.color.black)
-                )
+                    mTypeArray.getColor(
+                            R.styleable.KatexView_textColor,
+                            ContextCompat.getColor(getContext(), android.R.color.black)
+                    )
             )
 
             val text: String? = mTypeArray.getString(R.styleable.KatexView_text)
