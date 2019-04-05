@@ -34,11 +34,11 @@ __________
 Include the following code in your xml layout
 
 ```xml
-    <com.judemanutd.katexview.KatexView
-        android:id="@+id/katex_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:textColor="@color/colorPrimary" />
+<com.judemanutd.katexview.KatexView
+    android:id="@+id/katex_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:textColor="@color/colorPrimary" />
 ```
 
 You can then supply the text to be rendered in kotlin or java
@@ -50,6 +50,7 @@ katex_text.setText(text)
 
 ```
 
+<img src="https://raw.githubusercontent.com/judemanutd/KatexView/master/example.png" />
 
 ## Supported Attributes
 
