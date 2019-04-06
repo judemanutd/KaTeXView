@@ -9,16 +9,16 @@ ext {
     bintrayRepo = "Maven"
     bintrayName = "KatexView"
 
-    publishedGroupId = 'com.judemanutd'
+    publishedGroupId = 'com.github.judemanutd'
     libraryName = 'KatexView'
-    artifact = 'KatexView'
+    artifact = 'katexView'
 
     libraryDescription = 'A library that uses Khan Academy Katex for TeX math rendering'
 
     siteUrl = 'https://github.com/judemanutd/KatexView'
     gitUrl = 'https://github.com/judemanutd/KatexView.git'
 
-    libraryVersion = '1.0.0'
+    libraryVersion = '1.0.1'
 
     developerId = 'judemanutd'
     developerName = 'Jude Fernandes'
@@ -35,8 +35,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 

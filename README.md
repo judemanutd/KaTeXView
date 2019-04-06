@@ -12,7 +12,7 @@ Add this to your module's build.gradle file:
 
 dependencies {
     // ... other dependencies
-    implementation 'com.judemanutd:KatexView:1.0.0'
+    implementation 'com.github.judemanutd:katexView:1.0.1'
 }
 
 ```
@@ -22,9 +22,9 @@ dependencies {
 ```xml
 
 <dependency>
-  <groupId>com.judemanutd</groupId>
-  <artifactId>KatexView</artifactId>
-  <version>1.0.0</version>
+  <groupId>com.github.judemanutd</groupId>
+  <artifactId>katexView</artifactId>
+  <version>1.0.1</version>
   <type>pom</type>
 </dependency>
 
