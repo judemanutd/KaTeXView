@@ -6,12 +6,12 @@ apply plugin: 'com.github.dcendents.android-maven'
 
 ext {
 
-    bintrayRepo = "Maven"
-    bintrayName = "KatexView"
+    bintrayRepo = "maven"
+    bintrayName = "katexview"
 
     publishedGroupId = 'com.github.judemanutd'
-    libraryName = 'KatexView'
-    artifact = 'katexView'
+    libraryName = 'katexview'
+    artifact = 'katexview'
 
     libraryDescription = 'A library that uses Khan Academy Katex for TeX math rendering'
 
