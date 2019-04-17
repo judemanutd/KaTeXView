@@ -1,6 +1,6 @@
-# Katex View
+# KaTeX View
 
-A library that uses [Khan Academy Katex](https://github.com/KaTeX/KaTeX) for TeX math rendering.
+A library that uses [Khan Academy KaTeX](https://github.com/KaTeX/KaTeX) for TeX math rendering.
 
 ## Usage
 
