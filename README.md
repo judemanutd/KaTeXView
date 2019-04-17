@@ -1,5 +1,9 @@
 # KaTeX View
 
+[![Download](https://api.bintray.com/packages/jude-manutd/maven/katexview/images/download.svg) ](https://bintray.com/jude-manutd/maven/katexview/_latestVersion)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://opensource.org/licenses/MIT) 
+[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)
+
 A library that uses [Khan Academy KaTeX](https://github.com/KaTeX/KaTeX) for TeX math rendering.
 
 ## Usage
