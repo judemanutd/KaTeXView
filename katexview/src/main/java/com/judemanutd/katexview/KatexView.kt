@@ -12,15 +12,19 @@ import com.x5.template.providers.AndroidTemplates
 import androidx.core.content.ContextCompat
 
 @SuppressLint("SetJavaScriptEnabled")
-class KatexView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) :
-        WebView(context, attrs, defStyleAttr) {
+class KatexView @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
+) :
+    WebView(context, attrs, defStyleAttr) {
 
     private val TAG_FORMULA: String = "formula"
     private val TAG_TEXT_COLOR: String = "textColor"
 
     private var mText: String? = null
     //TODO: pick theme set text color
-    private var mTextColor: Int = android.R.color.black
+    private var mTextColor: Int = android.R.color.holo_purple
 
     init {
         settings.allowFileAccess = true
@@ -37,10 +41,10 @@ class KatexView @JvmOverloads constructor(context: Context, attrs: AttributeSet?
 
         try {
             setTextColor(
-                    mTypeArray.getColor(
-                            R.styleable.KatexView_textColor,
-                            ContextCompat.getColor(getContext(), android.R.color.black)
-                    )
+                mTypeArray.getColor(
+                    R.styleable.KatexView_textColor,
+                    ContextCompat.getColor(getContext(), android.R.color.black)
+                )
             )
 
             val text: String? = mTypeArray.getString(R.styleable.KatexView_text)

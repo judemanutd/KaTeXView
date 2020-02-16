@@ -4,12 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".KatexExampleActivity">
 
     <com.judemanutd.katexview.KatexView
         android:id="@+id/katex_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:textColor="@color/colorPrimary" />
+        app:textColor="@color/colorAccent" />
+
+    <com.judemanutd.katexview.KatexView
+        android:id="@+id/katex_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>

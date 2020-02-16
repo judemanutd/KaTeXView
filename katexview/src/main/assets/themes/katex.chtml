@@ -8,7 +8,7 @@
          body {
              margin : 0;
              padding : 0;
-             color : {$textColor}
+             color: {$textColor} !important;
              -webkit-touch-callout: none!important;
              -webkit-user-select: none!important;
              user-select: none!important;
